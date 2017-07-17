@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />    
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="format-detection" content="telephone=yes"/>
+	<meta name="msapplication-tap-highlight" content="no" />
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+	<script src="./js/jquery-1.10.2.js"></script>
+	<script src="./js/jquery.fly.min.js"></script>
+	<style>
+		header{
+			position:fixed;
+			width: 100%;
+			height:1.3rem;
+			background-color: #ab956d;
+			z-index:999;
+			color: #fff;
+		}
+		.header span.pre{
+			float: left;
+			width: 5%;
+			height: 1.3rem;
+			line-height: 1.3rem;
+			font-size: .6rem;
+			margin-left: 1%;
+		}
+		.header span.pretxt{
+			float: left;
+			height: 1.3rem;
+			line-height: 1.3rem;
+			font-size: .4rem;
+			margin-left: 1%;
+		}
+		.header span.title{
+			float: left;
+			line-height: 1.3rem;
+			font-size: .5rem;
+			color:#fff;
+			margin-left: 25%;
+		}
+		section{
+			width: 100%;
+			padding-top: 1.3rem;
+		}
+		.banner{
+			width: 100%;
+			background-color: #fff;
+		}
+		.bannerPic{
+			height: 5.5rem;
+		}
+		.pic{
+			position:absolute;
+			width: 10%;
+			height: 1rem;
+			top:1.8rem;
+			right:5%;
+		}
+		.pic img{
+			width: 100%;
+			height: 1005;
+		}
+		.bar{
+			display: block;
+			width: 90%;
+			height: 1rem;
+			overflow: hidden;
+			background-color: #ab956d;
+			border-radius: 20px;
+			margin-left: 5%;
+			line-height: 1rem;
+			color: #fff;
+			margin-top: .3rem;
+		}
+		.bar .num{
+			margin-left:10%;
+		}
+		.bar .number{
+			margin-left: 3%;
+		}
+		.bar .reduce{
+			display: inline-block;
+			width: 10%;
+			text-align: center;
+		}
+		.bar .add{
+			display: inline-block;
+			margin-left: 3%;
+			width: 10%;
+			text-align: center;
+		}
+		.bar .buy{
+			margin-left: 7%;
+		}
+		.bar .buypic{
+			float: right;
+			margin-right: 10%;
+			width: 6%;
+			height: .6rem;
+			padding-top: .2rem;
+		}
+		.bar .buypic img{
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		.goodsContent{
+			display: block;
+			width: 100%;
+			height: 3.5rem;
+			padding-top: .3rem;
+		}
+		.goodsContent span{
+			display: block;
+			text-align: center;
+			line-height: 1.5rem;
+			font-size: .5rem;
+			color:#666;
+		}
+		.cl{
+			width: 100%;
+			height: .3rem;
+			background-color: #eee;
+		}
+		.tabtitle li{
+			float: left;
+			width: 33.33%;
+			height: 1rem;
+			border-bottom: 1px solid #eee;
+			text-align: center;
+			line-height: 1rem;
+			color:#999;
+		}
+		.tabtitleCurrent{
+			width: 33.33%;
+			height: 1rem;
+			color:#ab956d!important;
+			border-bottom: 2px solid #ab956d !important;
+		}
+		.tabContent li{
+			float: left;
+			width: 100%;
+			text-align: center;
+			padding-top: .5rem;
+			display: none;
+		}
+		.tabContentCurrent{
+			display: block !important;
+		}
+		.flyer{
+			display: block;
+			width: .5rem;
+			height: .5rem;
+			border-radius: 50%;
+			background-color: #ab956d;
+			margin-top: -.4rem;
+			color: #fff;
+			text-align: center;
+			line-height: .5rem;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="header">
+			<span class="pre"><</span>
+			<span class="pretxt">返回</span>
+			<span class="title">零食水果</span>
+			<span class="share">...</span>
+		</div>
+	</header>
+	<section>
+		<div class="banner">
+			<p class="bannerPic"><img src="" alt=""></p>
+			<span class="pic">
+				<img src="./images/cart2.png" alt="">
+			</span>
+			<p class="bar">
+				<span class="num">数量</span>
+				<span class="reduce">-</span>
+				<span class="number">1</span>
+				<span class="add">+</span>
+				<span class="buy">加入购物车</span>
+				<span class="buypic">
+					<img src="./images/cart1.png" alt="">
+					<span class="flyer"></span>
+				</span>
+			</p>
+			<p class="goodsContent">
+				<span>新鲜的吐鲁番葡萄</span>
+				<span>￥2.0/500g</span>
+			</p>
+		</div>
+		<div class="cl"></div>
+		<div class="tab">
+			<ul class="tabtitle">
+				<li class="tabtitleCurrent">商品详情</li>
+				<li>产品参数</li>
+				<li>售后保障</li>
+			</ul>
+			<ul class="tabContent">
+				<li class="tabContentCurrent">
+					<p>我是商品详情</p>
+				</li>
+				<li>
+					<p>我是产品参数</p>
+				</li>
+				<li>
+					<p>我是售后保障</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<script type="text/template" id="goodsDetail_temp">
+		<div class="banner">
+			<p><img src="" alt=""></p>
+			<span>
+				<img src="" alt="">
+			</span>
+			<p>
+				<span>数量：X</span>
+				<span>+</span>
+				<span>加入购物车</span>
+				<span>
+					<img src="" alt="">
+				</span>
+			</p>
+			<p>
+				<span>商品名称</span>
+				<span>￥2/500g</span>
+			</p>
+		</div>
+		<div class="cl"></div>
+		<div class="tab">
+			<ul class="tabtitle">
+				<li>商品详情</li>
+				<li>产品参数</li>
+				<li>售后保障</li>
+			</ul>
+			<ul class="tabContent">
+				<li>
+					<p>我是商品详情</p>
+				</li>
+				<li>
+					<p>我是产品参数</p>
+				</li>
+				<li>
+					<p>我是售后保障</p>
+				</li>
+			</ul>
+		</div>
+	</script>
+	<script>
+		$(document).ready(function() {
+			tabFn();
+			$(".pre").on('touchend',function(){
+				window.location.href="./index.html"
+			});
+			$(".pretxt").on('touchend',function(){
+				window.location.href="./index.html"
+			});
+			$(".reduce").on('touchend',function(){
+				var num = $(".number").html();
+				if(num == 1)return;
+				num--;
+				$(".number").html(num);
+				 good_number = parseInt($(".number").html());
+			})
+			$(".add").on('touchend',function(){
+				var num = $(".number").html();
+				num++;
+				$(".number").html(num);
+				 good_number = parseInt($(".number").html());
+			})
+		});
+		var good_number = 1;
+		var totalnum=0; 
+		var tabFn = function(){
+				$(".tabtitle").on('touchend','li',function(){
+						$(".tabtitle>li").removeClass("tabtitleCurrent");
+						$(".tabContent>li").removeClass("tabContentCurrent");
+						$(this).addClass("tabtitleCurrent");
+						$($(".tabContent>li")[$(this).index()]).addClass("tabContentCurrent");
+				});
+		}
+		
+
+		
+	
+		var offset = $('.pic').offset();  
+		$('.buypic').click(function (event) { 
+		    var flyer = $('.flyer').clone(); 
+				 totalnum = totalnum + good_number;
+		   
+
+		    flyer.fly({  
+		        start: {  
+		            left: event.pageX,  
+		            top: event.pageY  
+		        },  
+		        end: {  
+		            left: offset.left - 3,  
+		            top: offset.top, 
+		        },  
+		        onEnd: function () { 
+		            setTimeout(function () {  
+		                flyer.css({  
+		                    width:".5rem",
+		                    height:".5rem",
+		                    "border-radius":"50%"
+		                });  
+		                
+		            	$(flyer).html(totalnum);
+		            	
+		            }, 200);  
+		        } 
+
+		
+		    }); 
+
+		}); 
+	</script>
+</body>
+</html>

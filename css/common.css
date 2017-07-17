@@ -1,0 +1,106 @@
+a{
+	text-decoration: none;
+	color:#aaa;
+}
+a:link{
+	text-decoration:none;  
+}
+a:visited{
+	text-decoration:none; 
+}
+a:hover{
+	text-decoration:none;
+}
+a:active{
+	text-decoration:none;
+}
+header{
+	position:fixed;
+	width: 100%;
+	height:1.3rem;
+	background-color: #ab956d;
+	z-index:999;
+	
+}
+.header span.title{
+	display: block;
+	text-align: center;
+	line-height: 1.3rem;
+	font-size: .5rem;
+	color:#fff;
+}
+.header span.share{
+	position:absolute;
+	top:-12px;
+	right: 8px;
+	color: #fff;
+	font-size: 1rem;
+}
+footer{
+	position:fixed;
+	bottom:0;
+	width: 100%;
+	height:1.8rem;
+	border-top:1px solid #ab956d;
+	z-index:999999;
+	overflow: hidden;
+	background-color: #fff;
+}
+.footer{
+	width: 100%;
+	height: 100%;
+}
+.footer li{
+	float: left;
+	width: 20%;
+	height: 100%;
+	text-align: center;
+	line-height: 2.8rem;
+	font-size: .5rem;
+	color: #aaa;
+}
+.footer li.indexpage span{
+	position: absolute;
+	width: 20%;
+	height: 1rem;
+	top:6px;
+	left: .55rem;
+	background:url(../images/index1.png)no-repeat 0 0 ;
+	background-size:40% 80%;
+}
+.footer li.typepage span{
+	position: absolute;
+	width: 20%;
+	height: 1rem;
+	top:6px;
+	left: 2.6rem;
+	background:url(../images/type0.png)no-repeat 0 0 ;
+	background-size:40% 80%;
+}
+.footer li.buypage span{
+	position: absolute;
+	width: 20%;
+	height: 1rem;
+	top:6px;
+	left: 4.55rem;
+	background:url(../images/buy0.png)no-repeat 0 0 ;
+	background-size:40% 80%;
+}
+.footer li.mepage span{
+	position: absolute;
+	width: 20%;
+	height: 1rem;
+	top:6px;
+	left: 8.6rem;
+	background:url(../images/me0.png)no-repeat 0 0 ;
+	background-size:40% 80%;
+}
+.footer li.distribution span{
+	position: absolute;
+	width: 20%;
+	height: 1rem;
+	top:6px;
+	left: 6.55rem;
+	background:url(../images/buy0.png)no-repeat 0 0 ;
+	background-size:40% 80%;
+}
